@@ -80,6 +80,36 @@ function setupYear() {
     if (year) year.textContent = String(new Date().getFullYear());
 }
 
+function setupBackToTop() {
+    const button = document.getElementById("backToTop");
+    if (!button) return;
+
+    const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    let ticking = false;
+    function updateVisibility() {
+        const shouldShow = window.scrollY > 500;
+        button.classList.toggle("is-visible", shouldShow);
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(updateVisibility);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    updateVisibility();
+
+    button.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: reduceMotion ? "auto" : "smooth",
+        });
+    });
+}
+
 function showToast(message) {
     const toast = document.getElementById("toastMessage");
     if (!toast) return;
@@ -204,6 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupMobileMenu();
     setupHeaderElevation();
     setupYear();
+    setupBackToTop();
     setupProjectDemoRequests();
     setupTypingEffect();
     animateLanguageBars();
