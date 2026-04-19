@@ -37,7 +37,7 @@
                 <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
                 <a class="nav-link" href="#skills"><i class="fas fa-cogs"></i> Skills</a>
                 <a class="nav-link" href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
-                <a class="nav-link" href="resume.pdf" download><i class="fas fa-file-download"></i> Resume</a>
+                <a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> View Resume</a>
                 <a class="nav-link" href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
                 <a class="nav-link" href="#languages"><i class="fas fa-language"></i> Languages</a>
                 <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
@@ -66,7 +66,7 @@
 
                     <div class="cta-row">
                         <a class="button" href="#projects"><i class="fas fa-arrow-right"></i> View My Projects</a>
-                        <a class="button button-secondary" href="resume.pdf" download><i class="fas fa-file-download"></i> Download Resume</a>
+                        <a class="button button-secondary" href="resume.html"><i class="fas fa-file-alt"></i> View Resume</a>
                         <a class="button button-ghost" href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
                         <a class="button button-ghost" href="https://www.linkedin.com/in/cruz-jr-arturo-248a96302/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a class="button button-ghost" href="https://github.com/r2ro-crz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
@@ -241,13 +241,86 @@
                 <div class="grid grid-projects">
                     <article class="card card-project">
                         <div class="project-media">
+                            <img class="project-image" src="assets/projects/nfa-palayportal.png" alt="NFA PalayPortal screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i> Add screenshot: <span class="mono">assets/projects/nfa-palayportal.png</span></div>
+                        </div>
+                        <div class="card-top">
+                            <h3 class="card-title">NFA PalayPortal <span class="muted">(Web, 2025 • Internship)</span></h3>
+                            <p class="card-body">Developed a multi-user web system that streamlines farmer appointments, branch workflows, and operational monitoring—paired with dashboards and notifications for faster coordination.</p>
+                        </div>
+                        <div class="project-meta-title"><i class="fas fa-bullseye"></i> Problem</div>
+                        <p class="project-impact">Farmer transactions and warehouse workflows are difficult to coordinate when scheduling, status updates, and reporting live in separate manual processes.</p>
+
+                        <div class="project-meta-title"><i class="fas fa-lightbulb"></i> Solution</div>
+                        <p class="project-impact">A calendar-based appointment workflow with role-based tools for Admin/Operator and a low-friction path for Farmers, supported by analytics dashboards, automated messaging, and an internal chat module.</p>
+
+                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
+                        <ul class="list">
+                            <li><strong>Users:</strong> Admin, Processor/Operator, Farmer (no account)</li>
+                            <li>Calendar scheduling with approval/reschedule + email notifications</li>
+                            <li>Real-time analytics, warehouse freeze logic, and local chatting system</li>
+                        </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Improves visibility and reduces scheduling bottlenecks by keeping appointments, statuses, and reports in one workflow with clear ownership per role.</p>
+                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
+                        <div class="tags" aria-label="Technologies">
+                            <span class="tag"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="button button-secondary project-demo" href="#contact" data-project="NFA PalayPortal"><i class="fas fa-info-circle"></i> Request details</a>
+                        </div>
+                    </article>
+
+                    <article class="card card-project">
+                        <div class="project-media">
+                            <img class="project-image" src="assets/projects/rotc-inventory.png" alt="ROTC Inventory Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i> Add screenshot: <span class="mono">assets/projects/rotc-inventory.png</span></div>
+                        </div>
+                        <div class="card-top">
+                            <h3 class="card-title">ROTC Inventory Management System <span class="muted">(Desktop, 2025)</span></h3>
+                            <p class="card-body">Developed a barcode-driven inventory system that tracks issue/return history, item condition, and reporting—built to replace error-prone manual logs during equipment release.</p>
+                        </div>
+                        <div class="project-meta-title"><i class="fas fa-bullseye"></i> Problem</div>
+                        <p class="project-impact">Manual recording makes it hard to answer “who borrowed what, when, and in what condition” during inventory checks and audits.</p>
+
+                        <div class="project-meta-title"><i class="fas fa-lightbulb"></i> Solution</div>
+                        <p class="project-impact">A fast check-in/check-out workflow powered by generated barcodes and scanner support, with automatic report generation and transaction history.</p>
+
+                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
+                        <ul class="list">
+                            <li><strong>User:</strong> Supply Officer</li>
+                            <li>Borrow transaction history, damaged equipment reporting, final report generation</li>
+                            <li>Auto-generated barcode per item + barcode scanner support</li>
+                        </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Improves accountability by making item movement traceable and reports easier to generate during audits and inventory checks.</p>
+                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
+                        <div class="tags" aria-label="Technologies">
+                            <span class="tag"><i class="fas fa-code"></i> C#</span>
+                            <span class="tag"><i class="fas fa-desktop"></i> WinForms</span>
+                            <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="button button-secondary project-demo" href="#contact" data-project="ROTC Inventory Management System"><i class="fas fa-info-circle"></i> Request details</a>
+                        </div>
+                    </article>
+
+                    <article class="card card-project">
+                        <div class="project-media">
                             <img class="project-image" src="assets/projects/apartment-management.png" alt="Apartment Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
-                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i> Add screenshot: <span class="mono">assets/projects/apartment-management.png</span></div>
                         </div>
                         <div class="card-top">
                             <h3 class="card-title">Apartment Management System <span class="muted">(Desktop, 2024)</span></h3>
                             <p class="card-body">Built a role-based desktop system that centralizes tenant records, maintenance workflows, and payment tracking to keep operations organized and auditable.</p>
                         </div>
+                        <div class="project-meta-title"><i class="fas fa-bullseye"></i> Problem</div>
+                        <p class="project-impact">Apartment operations often rely on scattered files and manual follow-ups for payments, requests, and announcements—leading to missed items and inconsistent records.</p>
+
+                        <div class="project-meta-title"><i class="fas fa-lightbulb"></i> Solution</div>
+                        <p class="project-impact">A centralized desktop system with role-based access so landlords, staff, and tenants can work from one source of truth for maintenance, documents, and payments.</p>
+
                         <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
                         <ul class="list">
                             <li><strong>Users:</strong> Landlord (Admin), Staff, Tenants</li>
@@ -269,19 +342,25 @@
                     <article class="card card-project">
                         <div class="project-media">
                             <img class="project-image" src="assets/projects/student-information-system.jpg" alt="Student Information Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
-                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i> Add screenshot: <span class="mono">assets/projects/student-information-system.jpg</span></div>
                         </div>
                         <div class="card-top">
                             <h3 class="card-title">Student Information Management System <span class="muted">(Desktop, 2024)</span></h3>
-                            <p class="card-body">Developed a desktop system for managing schedules, sections, attendance, and grades—helping schools keep student records accurate and accessible across roles.</p>
+                            <p class="card-body">Developed a desktop system for schedules, attendance, and grading—helping schools keep student records accurate, searchable, and consistent across roles.</p>
                         </div>
+                        <div class="project-meta-title"><i class="fas fa-bullseye"></i> Problem</div>
+                        <p class="project-impact">Manual attendance and grade tracking are time-consuming and prone to errors, especially when multiple roles need the same up-to-date student data.</p>
+
+                        <div class="project-meta-title"><i class="fas fa-lightbulb"></i> Solution</div>
+                        <p class="project-impact">A role-based desktop system with barcode-based attendance and camera capture stored in the database for traceability, alongside schedule and grade management.</p>
+
                         <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
                         <ul class="list">
                             <li><strong>Users:</strong> Admin, Professor, Students</li>
                             <li>Attendance with barcode scanning and live camera capture saved to database</li>
                             <li>Schedules, sections, subjects, and grade management</li>
                         </ul>
-                        <p class="project-impact"><strong>Impact:</strong> Streamlines attendance and grading workflows while improving traceability through captured records stored in the database.</p>
+                        <p class="project-impact"><strong>Impact:</strong> Streamlines attendance and grading workflows while improving traceability through stored captured records.</p>
                         <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
                         <div class="tags" aria-label="Technologies">
                             <span class="tag"><i class="fas fa-code"></i> C#</span>
@@ -290,61 +369,6 @@
                         </div>
                         <div class="card-actions">
                             <a class="button button-secondary project-demo" href="#contact" data-project="Student Information Management System"><i class="fas fa-info-circle"></i> Request details</a>
-                        </div>
-                    </article>
-
-                    <article class="card card-project">
-                        <div class="project-media">
-                            <img class="project-image" src="assets/projects/rotc-inventory.png" alt="ROTC Inventory Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
-                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
-                        </div>
-                        <div class="card-top">
-                            <h3 class="card-title">ROTC Inventory Management System <span class="muted">(Desktop, 2025)</span></h3>
-                            <p class="card-body">Created a desktop inventory system that tracks equipment, borrower history, and item conditions using barcodes—built for fast check-in/check-out workflows.</p>
-                        </div>
-                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
-                        <ul class="list">
-                            <li><strong>User:</strong> Supply Officer</li>
-                            <li>Borrow transaction history, damaged equipment reporting, final report generation</li>
-                            <li>Auto-generated barcode per item + barcode scanner support</li>
-                        </ul>
-                        <p class="project-impact"><strong>Impact:</strong> Improves accountability by making item movement traceable and reports easier to generate during audits and inventory checks.</p>
-                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
-                        <div class="tags" aria-label="Technologies">
-                            <span class="tag"><i class="fas fa-code"></i> C#</span>
-                            <span class="tag"><i class="fas fa-desktop"></i> WinForms</span>
-                            <span class="tag"><i class="fas fa-database"></i> MySQL</span>
-                        </div>
-                        <div class="card-actions">
-                            <a class="button button-secondary project-demo" href="#contact" data-project="ROTC Inventory Management System"><i class="fas fa-info-circle"></i> Request details</a>
-                        </div>
-                    </article>
-
-                    <article class="card card-project">
-                        <div class="project-media">
-                            <img class="project-image" src="assets/projects/nfa-palayportal.png" alt="NFA PalayPortal screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
-                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
-                        </div>
-                        <div class="card-top">
-                            <h3 class="card-title">NFA PalayPortal <span class="muted">(Web, 2025 • Internship)</span></h3>
-                            <p class="card-body">Built a web-based appointment and branch workflow system that helps manage farmer transactions with automated updates, analytics dashboards, and operational controls.</p>
-                        </div>
-                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
-                        <ul class="list">
-                            <li><strong>Users:</strong> Admin, Processor/Operator, Farmer (no account)</li>
-                            <li>Calendar-based appointments with approval/reschedule + email notifications</li>
-                            <li>Real-time analytics, warehouse freeze logic, and local chatting system</li>
-                        </ul>
-                        <p class="project-impact"><strong>Impact:</strong> Helps reduce bottlenecks by organizing scheduling, improving visibility through dashboards, and keeping stakeholders informed via notifications.</p>
-                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
-                        <div class="tags" aria-label="Technologies">
-                            <span class="tag"><i class="fab fa-php"></i> PHP</span>
-                            <span class="tag"><i class="fas fa-database"></i> MySQL</span>
-                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="tag"><i class="fab fa-html5"></i> HTML/CSS</span>
-                        </div>
-                        <div class="card-actions">
-                            <a class="button button-secondary project-demo" href="#contact" data-project="NFA PalayPortal"><i class="fas fa-info-circle"></i> Request details</a>
                         </div>
                     </article>
                 </div>

@@ -608,6 +608,23 @@ a:hover {
     line-height: 1.6;
 }
 
+/* Resume page */
+.resume-card {
+    padding: 18px;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: min(82vh, 980px);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface-2);
+}
+
+.resume-fallback {
+    margin-top: 14px;
+}
+
 .card-top {
     display: grid;
     gap: 8px;

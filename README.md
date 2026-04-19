@@ -37,10 +37,10 @@ Equipment tracking system designed for supply officers.
 - **Portfolio:** [Live Link](https://r2ro-crz.github.io/portfolio/)
 
 ## ✅ Hire-ready checklist
-- Add your resume file as `resume.pdf` in the project root (the site includes a download button + nav link).
+- Resume preview is at `resume.html` and downloads `Cruz Jr_Arturo_Resume.pdf`.
 - Add project screenshots under `assets/projects/` (the Projects section shows a placeholder until the image exists):
-	- `assets/projects/apartment-management.jpg`
+	- `assets/projects/nfa-palayportal.png`
+	- `assets/projects/rotc-inventory.png`
+	- `assets/projects/apartment-management.png`
 	- `assets/projects/student-information-system.jpg`
-	- `assets/projects/rotc-inventory.jpg`
-	- `assets/projects/nfa-palayportal.jpg`
 - Optional (recommended): set up a custom domain (e.g., `arturocruz.dev` or `arturocarbonellcruz.com`) for a more professional URL.
