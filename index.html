@@ -37,6 +37,7 @@
                 <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
                 <a class="nav-link" href="#skills"><i class="fas fa-cogs"></i> Skills</a>
                 <a class="nav-link" href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+                <a class="nav-link" href="resume.pdf" download><i class="fas fa-file-download"></i> Resume</a>
                 <a class="nav-link" href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
                 <a class="nav-link" href="#languages"><i class="fas fa-language"></i> Languages</a>
                 <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
@@ -52,20 +53,29 @@
             <div class="container hero-grid">
                 <div>
                     <p class="eyebrow"><i class="fas fa-map-marker-alt"></i> System Developer • Quezon City, Metro Manila</p>
-                    <h1 class="headline">Software Developer &amp; IT Specialist building <span class="gradient-text">secure, scalable systems</span>.</h1>
-                    <p class="subhead" id="typing"></p>
+                    <h1 class="headline" id="hero-text" data-text="I build real-world systems that solve business problems">I build real-world systems that solve business problems</h1>
+
+                    <p class="subtitle">
+                        System Developer specializing in POS, Inventory, and Management Systems
+                    </p>
+
+                    <p class="description">
+                        I develop scalable web and desktop applications designed to streamline operations,
+                        improve data management, and automate workflows using C#, PHP, JavaScript, and MySQL.
+                    </p>
 
                     <div class="cta-row">
-                        <a class="button" href="#projects"><i class="fas fa-arrow-right"></i> View projects</a>
-                        <a class="button button-secondary" href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
+                        <a class="button" href="#projects"><i class="fas fa-arrow-right"></i> View My Projects</a>
+                        <a class="button button-secondary" href="resume.pdf" download><i class="fas fa-file-download"></i> Download Resume</a>
+                        <a class="button button-ghost" href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
                         <a class="button button-ghost" href="https://www.linkedin.com/in/cruz-jr-arturo-248a96302/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a class="button button-ghost" href="https://github.com/r2ro-crz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
                     </div>
 
                     <ul class="highlights" aria-label="Highlights">
-                        <li class="highlight"><i class="fas fa-globe"></i> Web &amp; desktop applications with real workflows</li>
-                        <li class="highlight"><i class="fas fa-shield-alt"></i> Security-minded database management (MySQL)</li>
-                        <li class="highlight"><i class="fas fa-laptop-code"></i> Internship experience in systems &amp; IT support</li>
+                        <li class="highlight"><i class="fas fa-cash-register"></i> POS + inventory + management systems built around real workflows</li>
+                        <li class="highlight"><i class="fas fa-shield-alt"></i> Security-minded data handling and MySQL reporting</li>
+                        <li class="highlight"><i class="fas fa-sitemap"></i> Role-based, multi-user systems (Admin/Staff/User)</li>
                     </ul>
                 </div>
 
@@ -230,15 +240,22 @@
 
                 <div class="grid grid-projects">
                     <article class="card card-project">
+                        <div class="project-media">
+                            <img class="project-image" src="assets/projects/apartment-management.png" alt="Apartment Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
+                        </div>
                         <div class="card-top">
                             <h3 class="card-title">Apartment Management System <span class="muted">(Desktop, 2024)</span></h3>
-                            <p class="card-body">Role-based desktop app to manage tenants, staff workflows, maintenance, and payment records.</p>
+                            <p class="card-body">Built a role-based desktop system that centralizes tenant records, maintenance workflows, and payment tracking to keep operations organized and auditable.</p>
                         </div>
+                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
                         <ul class="list">
                             <li><strong>Users:</strong> Landlord (Admin), Staff, Tenants</li>
                             <li>Documents, announcements, maintenance requests, visitors, apartment status</li>
                             <li>Payment transactions with reporting and receipts</li>
                         </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Designed to reduce manual tracking, improve record consistency, and speed up day-to-day tenant support.</p>
+                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
                         <div class="tags" aria-label="Technologies">
                             <span class="tag"><i class="fab fa-microsoft"></i> VB.NET</span>
                             <span class="tag"><i class="fas fa-desktop"></i> WinForms</span>
@@ -250,15 +267,22 @@
                     </article>
 
                     <article class="card card-project">
+                        <div class="project-media">
+                            <img class="project-image" src="assets/projects/student-information-system.jpg" alt="Student Information Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
+                        </div>
                         <div class="card-top">
                             <h3 class="card-title">Student Information Management System <span class="muted">(Desktop, 2024)</span></h3>
-                            <p class="card-body">School system for classes, schedules, attendance, grades, and role-based management.</p>
+                            <p class="card-body">Developed a desktop system for managing schedules, sections, attendance, and grades—helping schools keep student records accurate and accessible across roles.</p>
                         </div>
+                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
                         <ul class="list">
                             <li><strong>Users:</strong> Admin, Professor, Students</li>
                             <li>Attendance with barcode scanning and live camera capture saved to database</li>
                             <li>Schedules, sections, subjects, and grade management</li>
                         </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Streamlines attendance and grading workflows while improving traceability through captured records stored in the database.</p>
+                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
                         <div class="tags" aria-label="Technologies">
                             <span class="tag"><i class="fas fa-code"></i> C#</span>
                             <span class="tag"><i class="fas fa-desktop"></i> WinForms</span>
@@ -270,15 +294,22 @@
                     </article>
 
                     <article class="card card-project">
+                        <div class="project-media">
+                            <img class="project-image" src="assets/projects/rotc-inventory.png" alt="ROTC Inventory Management System screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
+                        </div>
                         <div class="card-top">
                             <h3 class="card-title">ROTC Inventory Management System <span class="muted">(Desktop, 2025)</span></h3>
-                            <p class="card-body">Equipment tracking system with barcode generation, borrower records, and reporting.</p>
+                            <p class="card-body">Created a desktop inventory system that tracks equipment, borrower history, and item conditions using barcodes—built for fast check-in/check-out workflows.</p>
                         </div>
+                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
                         <ul class="list">
                             <li><strong>User:</strong> Supply Officer</li>
                             <li>Borrow transaction history, damaged equipment reporting, final report generation</li>
                             <li>Auto-generated barcode per item + barcode scanner support</li>
                         </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Improves accountability by making item movement traceable and reports easier to generate during audits and inventory checks.</p>
+                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
                         <div class="tags" aria-label="Technologies">
                             <span class="tag"><i class="fas fa-code"></i> C#</span>
                             <span class="tag"><i class="fas fa-desktop"></i> WinForms</span>
@@ -290,15 +321,22 @@
                     </article>
 
                     <article class="card card-project">
+                        <div class="project-media">
+                            <img class="project-image" src="assets/projects/nfa-palayportal.png" alt="NFA PalayPortal screenshot" loading="lazy" decoding="async" onerror="this.style.display='none'; this.closest('.project-media')?.classList.add('no-image');" />
+                            <div class="project-image-hint" aria-hidden="true"><i class="fas fa-image"></i></div>
+                        </div>
                         <div class="card-top">
                             <h3 class="card-title">NFA PalayPortal <span class="muted">(Web, 2025 • Internship)</span></h3>
-                            <p class="card-body">Appointment system for farmer transactions with analytics, branch workflows, and live chat.</p>
+                            <p class="card-body">Built a web-based appointment and branch workflow system that helps manage farmer transactions with automated updates, analytics dashboards, and operational controls.</p>
                         </div>
+                        <div class="project-meta-title"><i class="fas fa-check-circle"></i> Key features</div>
                         <ul class="list">
                             <li><strong>Users:</strong> Admin, Processor/Operator, Farmer (no account)</li>
                             <li>Calendar-based appointments with approval/reschedule + email notifications</li>
                             <li>Real-time analytics, warehouse freeze logic, and local chatting system</li>
                         </ul>
+                        <p class="project-impact"><strong>Impact:</strong> Helps reduce bottlenecks by organizing scheduling, improving visibility through dashboards, and keeping stakeholders informed via notifications.</p>
+                        <div class="project-meta-title"><i class="fas fa-layer-group"></i> Tech stack</div>
                         <div class="tags" aria-label="Technologies">
                             <span class="tag"><i class="fab fa-php"></i> PHP</span>
                             <span class="tag"><i class="fas fa-database"></i> MySQL</span>

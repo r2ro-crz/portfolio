@@ -17,6 +17,10 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+.mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 body[data-theme="dark"] {
     --bg: #0a0f1c;
     --surface: #111827;
@@ -244,6 +248,19 @@ a:hover {
 /* Hero Section */
 .hero {
     padding: 64px 0 32px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--accent);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 10px;
+    max-width: 60ch;
+    color: var(--muted);
 }
 
 .hero-grid {
@@ -542,6 +559,53 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 14px;
+}
+
+.project-media {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--surface-2), var(--surface));
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: grid;
+    place-items: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-image-hint {
+    padding: 14px 16px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.project-media:not(.no-image) .project-image-hint {
+    display: none;
+}
+
+.project-meta-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-top: 2px;
+}
+
+.project-meta-title i {
+    color: var(--accent);
+    margin-right: 8px;
+}
+
+.project-impact {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
 }
 
 .card-top {

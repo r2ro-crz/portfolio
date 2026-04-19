@@ -141,19 +141,51 @@ function setupProjectDemoRequests() {
 }
 
 function setupTypingEffect() {
+    const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const heroEl = document.getElementById("hero-text");
+    if (heroEl) {
+        const heroText = heroEl.getAttribute("data-text") || heroEl.textContent || "";
+        if (!heroText) return;
+
+        if (reduceMotion) {
+            heroEl.textContent = heroText;
+            return;
+        }
+
+        let i = 0;
+        heroEl.textContent = "";
+
+        function typeHero() {
+            if (i < heroText.length) {
+                heroEl.textContent += heroText.charAt(i);
+                i++;
+                setTimeout(typeHero, 25);
+            }
+        }
+
+        typeHero();
+        return;
+    }
+
     const typingEl = document.getElementById("typing");
     if (!typingEl) return;
-    
+
     const originalText = "Software Developer & IT Specialist experienced in building scalable web and desktop applications. Dedicated to streamlining complex workflows through efficient coding and secure database management.";
-    
+
+    if (reduceMotion) {
+        typingEl.textContent = originalText;
+        return;
+    }
+
     let i = 0;
     typingEl.innerHTML = '';
-    
+
     const cursorSpan = document.createElement('span');
     cursorSpan.className = 'typing-cursor';
     cursorSpan.innerHTML = '|';
     cursorSpan.style.cssText = 'display: inline-block; width: 2px; height: 1.2em; background-color: var(--accent); margin-left: 2px; vertical-align: middle; animation: blink 1s step-end infinite;';
-    
+
     function typeNext() {
         if (i < originalText.length) {
             typingEl.innerHTML = originalText.substring(0, i + 1);
@@ -164,7 +196,7 @@ function setupTypingEffect() {
             cursorSpan.style.animation = 'blink 1s step-end infinite';
         }
     }
-    
+
     typeNext();
 }
 
